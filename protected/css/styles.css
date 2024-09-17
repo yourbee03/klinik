@@ -1,0 +1,137 @@
+/* Reset beberapa gaya default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Kontainer utama */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Menambahkan border-radius untuk sudut yang lebih halus */
+}
+
+/* Header */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 8px 8px 0 0; /* Sudut atas yang halus */
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+/* Navigasi */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    background: #fff;
+    border-radius: 0 0 8px 8px; /* Sudut bawah yang halus */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007bff;
+    color: #fff;
+    border-radius: 0 0 8px 8px; /* Sudut bawah yang halus */
+}
+
+/* Form styles */
+form {
+    margin: 20px 0;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #0056b3; /* Warna lebih gelap saat hover */
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0; /* Jarak vertikal antar menu */
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px; /* Mengurangi padding untuk tampilan mobile */
+    }
+}
